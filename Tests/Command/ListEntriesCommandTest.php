@@ -60,7 +60,7 @@ class ListEntriesCommandTest extends KeychainTestCase
         $this->assertSame(0, $command->execute($input, $output));
 
         $screenOutput = $output->fetch();
-        $expected = <<<EOF
+        $expected     = <<<EOF
  ----- 
   Key  
  ----- 
