@@ -58,8 +58,7 @@ class AbstractKeychainCommandTest extends KeychainTestCase
 
         $application = new Application($input, $output);
 
-        $command = new class ($this->crypt) extends AbstractKeychainCommand
-        {
+        $command = new class ($this->crypt) extends AbstractKeychainCommand {
             protected function doExecute(InputInterface $input, OutputInterface $output): int
             {
                 return 0;
@@ -95,8 +94,7 @@ class AbstractKeychainCommandTest extends KeychainTestCase
 
         $application = new Application($input, $output);
 
-        $command = new class ($this->crypt) extends AbstractKeychainCommand
-        {
+        $command = new class ($this->crypt) extends AbstractKeychainCommand {
             protected function doExecute(InputInterface $input, OutputInterface $output): int
             {
                 return 0;
@@ -136,8 +134,7 @@ class AbstractKeychainCommandTest extends KeychainTestCase
 
         $application = new Application($input, $output);
 
-        $command = new class ($this->crypt) extends AbstractKeychainCommand
-        {
+        $command = new class ($this->crypt) extends AbstractKeychainCommand {
             protected function doExecute(InputInterface $input, OutputInterface $output): int
             {
                 $this->saveKeychain();
@@ -178,8 +175,7 @@ class AbstractKeychainCommandTest extends KeychainTestCase
 
         $application = new Application($input, $output);
 
-        $command = new class ($this->crypt) extends AbstractKeychainCommand
-        {
+        $command = new class ($this->crypt) extends AbstractKeychainCommand {
             protected function doExecute(InputInterface $input, OutputInterface $output): int
             {
                 $this->saveKeychain();
